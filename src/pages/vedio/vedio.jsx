@@ -11,4 +11,4 @@ const Vedio =()=>
 }
 
 
-export default Vedio
+export default Vedio;
