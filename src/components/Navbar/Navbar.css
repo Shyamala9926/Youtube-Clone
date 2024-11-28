@@ -1,12 +1,24 @@
-nav{
+ nav{
     padding: 10px 2%;
     justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0,0,0,0,2);
+    box-shadow: 0 0 20px rgba(0,0,0,0,2);
     background: #fff;
     position: sticky;
     top:0;
     z-index: 10;
-}
+    display: flex; 
+ }
+    
+ /*nav {
+    height: 56px;
+    padding: 0 16px;
+    display: flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}*/
+   
 .nav-left .menu-icon{
     width: 22px;
     margin-right: 25px;
@@ -23,7 +35,7 @@ nav{
     border-radius: 25px;
 }
 .nav-middle .search-box input{
-    width: 400px;
+    width: 500px;
     border: 0;
     outline: 0;
     background: transparent;
