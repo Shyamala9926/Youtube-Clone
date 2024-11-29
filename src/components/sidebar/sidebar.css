@@ -55,27 +55,42 @@
 .sidebar {
     background: #fff;
     width: 10%;
-    
     height: 100vh;
     position: fixed;
-    top: 0;
-    padding-left: 2%;
-    padding-right: 50px;
-    /* padding-right: 80px; */
+    /* top: 0; */
+    padding: 0 50px 0 2%;
+    transition: width 0.3s ease; /* Smooth transition for width changes */
 }
 
-.sortcut-links {
-    width: 20px;
+.shortcut-links {
     margin-right: 20px;
 }
 
+/*.side-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* margin-bottom: 20px; 
+    flex-wrap: wrap;
+    cursor: pointer;
+    width: fit-content;
+}*/
 .side-link {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    width: fit-content;
-    flex-wrap: wrap;
-    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+
+.side-link img {
+    width: 25px; /* Consistent image sizing */
+    margin-right: 10px;
+}
+
+.side-link p {
+    margin: 0; /* Remove extra spacing for text */
+    font-size: 14px;
+    color: #333;
 }
 
 .sidebar hr {
@@ -83,6 +98,7 @@
     height: 1px;
     background: #ccc;
     width: 85%;
+    margin: 20px 0; /* Consistent spacing above and below */
 }
 
 .subscribed-list h3 {
@@ -94,20 +110,19 @@
 .subscribed-list img {
     width: 25px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 10px; /* Consistent spacing with side-link images */
 }
 
 .small-sidebar {
-    width: 5%;
+    width: 5%; /* Reduced width for small-sidebar */
+    transition: width 0.3s ease; /* Smooth transition for width changes */
 }
 
 .small-sidebar p {
-    display: none;
+    display: none; /* Hide text in small-sidebar */
 }
 
 .small-sidebar hr {
     width: 50%;
-    margin-bottom: 25px;
+    margin-bottom: 25px; /* Adjust spacing for compact layout */
 }
-
-
