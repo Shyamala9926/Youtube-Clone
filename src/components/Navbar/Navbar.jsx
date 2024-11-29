@@ -11,9 +11,20 @@ import profile_icon from '../../assets/jack.png'
 const Navbar =({setSidebar})=>{
     return(
         <nav className="flex-dev">
-            <div className="nav-lef flex-div">
+            {/* <div className="nav-lef flex-div">
                 <img className="menu-icon" onClick={()=>setSidebar(prev=>prev===false?true:false)} src={menu_icon}alt=""/>
                 <img className="logo" src={logo}alt=""/>
+            </div> */}
+
+<div className="nav-left flex-div">
+                {/* Menu icon toggles the sidebar */}
+                <img
+                    className="menu-icon"
+                    onClick={() => setSidebar(prev => !prev)} // Toggle sidebar state
+                    src={menu_icon}
+                    alt="Menu Icon"
+                />
+                <img className="logo" src={logo} alt="Logo" />
             </div>
             
             <div className="nav-middle flex-div">
@@ -34,4 +45,4 @@ const Navbar =({setSidebar})=>{
 }
 
 
-export default Navbar
+export default Navbar;
