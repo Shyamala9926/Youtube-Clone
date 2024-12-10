@@ -95,15 +95,7 @@ useEffect(()=>{
             <p> 20k views &bull; 2 days ago</p>
             </div>
 
-            <div className="Card">
-            <img src={thumbnail6} alt="" />
-            <h2>Best channel to learn codeing that help you to be a web developer</h2>
-            <h3>Coolspirit</h3>
-            <p> 20k views &bull; 2 days ago</p>
-            </div>
-
             
-
             <div className="Card">
             <img src={thumbnail3} alt="" />
             <h2>Best channel to learn codeing that help you to be a web developer</h2>
