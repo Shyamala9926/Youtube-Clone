@@ -3,12 +3,7 @@ import './Feed.css'
 // import thumbnail1 from '../../assets/thumbnail1.png'
 // import thumbnail2 from '../../assets/thumbnail2.png'
 
-// import thumbnail3 from '../../assets/thumbnail3.png'
 
-// import thumbnail4 from '../../assets/thumbnail4.png'
-
-
-// import thumbnail8 from '../../assets/thumbnail8.png'
 import { Link } from 'react-router-dom';
 import {API_KEY} from'../../data';
 import value_converter from'../../data';
