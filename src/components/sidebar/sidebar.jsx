@@ -36,12 +36,7 @@ const Sidebar = (sidebar)=>{
             <div className="side-link">
                 <img src={entertainment} alt=""/><p>Entertainment</p>
             </div>
-            <div className="side-link">
-                <img src={ tech} alt=""/><p>Tech</p>
-            </div>
-            <div className="side-link">
-                <img src={ music} alt=""/><p>Music</p>
-            </div>
+           
             <div className="side-link">
                 <img src={blogs} alt=""/><p>blogs</p>
             </div>
