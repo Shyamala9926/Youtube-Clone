@@ -4,7 +4,7 @@
 ## 🛠️ Technologies Used
 - **Frontend**: React.js, HTML5, CSS3
 - **Backend**: Node.js, Express.js
-- **API**: YouTube Data API v3 (or RapidAPI for educational purposes).
+- **API**: YouTube Data API v3 .
 
 # URL
 - To Open App: https://shyamala9926.github.io/Youtube-Clone/
