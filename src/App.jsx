@@ -30,6 +30,37 @@ return(
 export default App*/
 
 
+// import React, { useState, Suspense, lazy } from "react";
+// import { Route, Routes } from "react-router-dom";
+// import Navbar from "./components/Navbar/Navbar";
+// import Sidebar from "./components/sidebar/sidebar";
+
+// const Home = lazy(() => import("./pages/Home/Home"));
+// const Video = lazy(() => import("./pages/video/video"));
+
+// const App = () => {
+//     const [sidebar, setSidebar] = useState(true);
+
+//     return (
+//         <div>
+//             <Navbar setSidebar={setSidebar} />
+//             <div className={`app-container ${sidebar ? 'sidebar-visible' : ''}`}>
+//                 {sidebar && <Sidebar sidebar={sidebar} />}
+//                 <Suspense fallback={<div>Loading...</div>}>
+//                     <Routes>
+//                         <Route path="/" element={<Home sidebar={sidebar} />} />
+//                         <Route path="/video/:CategoryId/:videoId" element={<Video />} />
+//                         <Route path="*" element={<div>Page Not Found</div>} />
+//                     </Routes>
+//                 </Suspense>
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default App;
+
+
 import React, { useState, Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
@@ -39,23 +70,27 @@ const Home = lazy(() => import("./pages/Home/Home"));
 const Video = lazy(() => import("./pages/video/video"));
 
 const App = () => {
-    const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(true);
+  const [searchQuery, setSearchQuery] = useState("");
 
-    return (
-        <div>
-            <Navbar setSidebar={setSidebar} />
-            <div className={`app-container ${sidebar ? 'sidebar-visible' : ''}`}>
-                {sidebar && <Sidebar sidebar={sidebar} />}
-                <Suspense fallback={<div>Loading...</div>}>
-                    <Routes>
-                        <Route path="/" element={<Home sidebar={sidebar} />} />
-                        <Route path="/video/:CategoryId/:videoId" element={<Video />} />
-                        <Route path="*" element={<div>Page Not Found</div>} />
-                    </Routes>
-                </Suspense>
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <Navbar setSidebar={setSidebar} handleSearch={setSearchQuery} />
+      <div className={`app-container ${sidebar ? "sidebar-visible" : ""}`}>
+        {sidebar && <Sidebar sidebar={sidebar} />}
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route
+              path="/"
+              element={<Home sidebar={sidebar} searchQuery={searchQuery} />}
+            />
+            <Route path="/video/:CategoryId/:videoId" element={<Video />} />
+            <Route path="*" element={<div>Page Not Found</div>} />
+          </Routes>
+        </Suspense>
+      </div>
+    </div>
+  );
 };
 
 export default App;
