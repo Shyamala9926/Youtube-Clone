@@ -49,8 +49,10 @@
 
 
 
+
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import menu_icon from "../../assets/menu.png";
 import logo from "../../assets/logo.png";
@@ -60,12 +62,15 @@ import more_icon from "../../assets/more.png";
 import notification_icon from "../../assets/notification.png";
 import Im from "../../assets/Im.png";
 
-const Navbar = ({ setSidebar, handleSearch }) => {
+const Navbar = ({ setSidebar }) => {
   const [query, setQuery] = useState("");
+  const navigate = useNavigate();
 
   const onSearch = (e) => {
     e.preventDefault();
-    handleSearch(query);
+    if (query.trim()) {
+      navigate(`/search/${query}`);
+    }
   };
 
   return (
@@ -90,7 +95,7 @@ const Navbar = ({ setSidebar, handleSearch }) => {
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search..."
             />
-            <button type="submit">
+            <button id="searchIcon" type="submit">
               <img src={search_icon} alt="Search Icon" />
             </button>
           </form>
@@ -107,3 +112,4 @@ const Navbar = ({ setSidebar, handleSearch }) => {
 };
 
 export default Navbar;
+
