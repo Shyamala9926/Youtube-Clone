@@ -1,0 +1,76 @@
+/* SearchResults.css */
+
+.search-results {
+  padding: 20px;
+}
+
+.search-results h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  padding-left: 170px;
+}
+
+.results-list {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+  padding-left: 170px;
+} */display: grid
+;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid: column gap 16px;
+grid: row gap 30px;
+margin-top: 15px;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.result-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.result-item div {
+  padding: 10px;
+}
+
+.result-item h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.result-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.result-item p:nth-child(2) {
+  color: #888;
+}
+
+.result-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.result-item a:hover .result-item img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.result-item a:hover div h3 {
+  color: #0073e6;
+}
