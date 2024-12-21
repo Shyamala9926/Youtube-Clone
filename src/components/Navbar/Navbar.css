@@ -85,7 +85,22 @@
 }
 
 /* Middle section */
-.nav-middle {
+.nav-middle .search-box{
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+.nav-middle .search-box input{
+    width: 500px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.nav-middle .search-box img{
+    width: 15px;
+}
+/* .nav-middle {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -120,7 +135,7 @@
    margin-left: 250px;
     position: absolute;
 }
-
+ */
 /* Right section */
 .nav-right {
     display: flex;
