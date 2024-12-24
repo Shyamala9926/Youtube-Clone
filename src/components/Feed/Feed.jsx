@@ -79,11 +79,7 @@ useEffect(()=>{
                 )
             })}*/
 
-           
-
-            /* 
-
-            <div className="Card">
+            /*  <div className="Card">
             <img src={thumbnail8} alt="" />
             <h2>Best channel to learn codeing that help you to be a web developer</h2>
             <h3>Coolspirit</h3>
