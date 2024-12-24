@@ -193,7 +193,6 @@ const PlayVideo = ({videoId}) => {
         const channelData_url='https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id=${apiData.snippet.channelId}&key=${API_KEY}';
         await fetch(channelData_url).then(res=>res.json().then(data=>setchanelData(data.items[0])))
 
-    //fetching comment data
     const comment_url='https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&maxResults=50&videoId=${videoId}&key=${API_KEY}';
     await fetch(comment_url).then(res=>res.json().then(data=>setchanelData(data.items)))
 }

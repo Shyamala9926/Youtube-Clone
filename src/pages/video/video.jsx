@@ -28,7 +28,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PlayVideo from "../../components/PlayVideo/PlayVideo";
 import Recommended from "../../components/Recommended/Recommended";
-import { API_KEY } from "../../data"; // Replace with your API key
+import { API_KEY } from "../../data"; 
 import './video.css';
 
 const Video = () => {
