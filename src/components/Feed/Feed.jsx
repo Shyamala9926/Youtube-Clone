@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './Feed.css'
 // import thumbnail1 from '../../assets/thumbnail1.png'
-// import thumbnail2 from '../../assets/thumbnail2.png'
+// import thumbnail2 from 
 
 
 import { Link } from 'react-router-dom';
