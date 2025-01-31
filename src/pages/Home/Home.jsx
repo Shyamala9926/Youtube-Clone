@@ -89,7 +89,7 @@ import React, { useState, useEffect } from "react";
 import "./Home.css";
 import Sidebar from "../../components/sidebar/sidebar";
 import Feed from "../../components/Feed/Feed";
-import { API_KEY } from "../../data"; // Import API_KEY from your config or environment
+import { API_KEY } from "../../data"; 
 
 const Home = ({ sidebar, searchQuery }) => {
   const [category, setCategory] = useState(0);
