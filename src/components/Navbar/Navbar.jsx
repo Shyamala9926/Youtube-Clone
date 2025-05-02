@@ -112,4 +112,3 @@ const Navbar = ({ setSidebar }) => {
 };
 
 export default Navbar;
-
