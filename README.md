@@ -1,4 +1,4 @@
-# YouTube Clone
+# YouTubeClone 
 🗒️This project is a functional YouTube Clone web application designed to mimic the core features of YouTube. 
 ## 🛠️ Technologies Used
 - **Frontend**: React.js, HTML5, CSS3.
